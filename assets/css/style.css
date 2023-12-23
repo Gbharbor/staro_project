@@ -28,20 +28,24 @@ hr {
     z-index: 1000;
     border-radius: 30px;
     margin-top: 5px;
+    box-shadow: 0px 0px 10px #999;
+    
 }
+
 .logo img {
     margin-left: 40px;
     width: 100px;
     height: 90px;
-}
-.menu_opener {
-    display: none;
 }
 .menu {
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
+.menu.active {
+    display: block;
+    opacity: 1;
+  }
 .menu ul {
     display: flex;
     margin-right: 20px;
@@ -63,7 +67,7 @@ hr {
     align-items:center;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 .menu li a:hover,
 .menu .active a {
@@ -115,7 +119,7 @@ hr {
     animation-name: button;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
     width: 145px;
 }
 .button:hover {
@@ -124,7 +128,6 @@ hr {
     box-shadow: 0px 0px 8px #a47c0c;
     border: 1px solid #a47c0c;
     color: #a47c0c;
-
 }
 .banner .sliders_pointers {
     width: 100vw;
@@ -186,42 +189,44 @@ input[type=submit] {
     padding-left: 10px;
 }
 .section_about_us_left {
-    flex: 1;
-    height: 400px;
-    width: 600px;
-    border-radius: 40px;
-    box-shadow: 0px 0px 5px #ddd;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #999;
     margin-top: 50px;
     animation-name: section_about_us_left;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
-
+.section_about_us_left video {
+    width: 100%;
+    height: 80%;
+    
+}
 .section_about_us_left:hover {
-    box-shadow: 0px 0px 15px #999;
-}
-.section_about_us_right {
-    width: 700px;
-    padding-left: 10px;
-
-}
-.section_about_us_right video {
-    width: 800px;
-    height: 500px;
-    margin-left: 10px;
+    box-shadow: 0px 0px 20px #999;
 }
 .section_about_us_left p {
-    margin-top: 60px;
-    font-size: 15px;
-    line-height: 29px;
-    padding-top: 10px;
-    padding-left: 20px;
+    font-size: 17px;
+    padding: 30px;
+    line-height: 35px;
     color: #333;
 }
-.section_about_us_left a {
-    margin-left: 140px;
-    margin-top: 20px;
+.section_about_us_left p:hover {
+ 
+    color: #555;
+}
+.section_about_us_left p::first-letter {
+    text-transform: uppercase;
+    color: #a47c0c;
+    font-size: 40px;
+  }
+.section_about_us_left .button {
+    margin: 0;
 }
 
 /*METODO*/
@@ -308,7 +313,7 @@ CLIENTES
     animation-name: section_client_photoinfo;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 .section_client_photoarea img:hover {
     width: 270px;
@@ -328,7 +333,7 @@ CLIENTES
     animation-name: section_client_photoinfo;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 .section_client_photoinfo:hover { 
     width: 270px;
@@ -455,8 +460,6 @@ CLIENTES
 .section_team_social a:hover {
     background-color: #a47c0c;
 }
-/*________________________________________________________________________________________________________________*/
-
 /*Testimonials*/
 .testimonials .section_body {
     max-width: initial;
@@ -613,21 +616,20 @@ CLIENTES
 
 /*Area do  rodape*/
 footer {
-    background-color:#333;    
+    background-color: #333;
 }
 .footer_area {
     display: flex;
-    max-width: 1140px;
-    margin: auto;
-    color: #fff;
-    padding-top: 20px;
-    height: 200px;
     align-items: center;
-
+    flex-direction: column;
+    max-width: 1140px;
+    padding-top: 30px;
+    height: 100%;
+    margin: auto;
 }
 .footer_item{
     flex: 1;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .footer_social {
     display: flex;
@@ -645,7 +647,7 @@ footer {
   animation-name: button;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 .footer_social a:hover {
     background-color: #999;
@@ -658,10 +660,9 @@ footer {
 }
 .footer_item.area2 {
     color: #999;
-    line-height: 20px;
-    font-size: 13px;
-    padding: 0 10px 10px 10px;
-    display: flex;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 10px;
     align-items: center;
 }
 #saiba_mais {
@@ -672,240 +673,238 @@ footer {
     color: #fff;
     text-decoration: underline;
 }
+
 .footer_item.area3 form {
-    background-color: #333;
-    padding: 30px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1140px;
 }
 .footer_item.area3 input {
-    margin-left: 25%;
-    width: 100%;
-    height: 20px;
     border:none;
     background: transparent;
     border-bottom: 0.5px solid #999;
     outline:0;
     color: #ddd;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
+    margin-bottom: 10px;
 }
 form .btn {
-    margin-top: 10px;
-    margin-left: 50%;
-    text-align: center;
-    width: 50%;
     background-color: #ccc;
-    
 }
-form .btn:hover {
-    text-align: center;
-    width: 50%;
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    animation-name: btn;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    transition: all 0.5s linear;
 }
-/*vms colocar no nosso nav um position absolute para q o menu fique flutuante e nos possamos mover ele.*/
-@media (min-width:450px) and (max-width:800px) {
-    .logo {
-        margin-left: 30px;
-    }
-    nav {
-        position: absolute;
-        z-index: 99;
-        background-color: rgba(0, 0, 0, 0.9);
-        width: 70vw;
-        height: calc(100vh - 100px); /*altura como um todo menos a altura do nosso menu*/
-        top: 100px;
-        right: 0;
-    }
-    /*dessa forma colocamos o menu um item abaixo do outro*/
-    .menu ul {
-        flex-direction:column;
-    }
-    .menu li a {
-        font-weight:bold;
-        height: 60px;
-        font-size: 23px;
-        margin-left:50px;
-        border:0;
-    }
-    .menu li.active a {
-        border:0;
-        color: #a47c0c;
-
-    }
-    .menu li a:hover {
-        border:0;
+.btn:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 8px #a47c0c;
+        border: 1px solid #a47c0c;
         color: #a47c0c;
     }
-    .menu_opener {
-        display: block;
-        width: 45px;
-        margin-right: 30px;
-    }
-    /*entao para o about us e so colocar um column*/
-    .section_about_us {
-        flex-direction: column;
-    }
-    .section_about_us_left {
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-    }
-    .section_about_us_right {
-        width:auto;
-    }
-    .section_services {
-        flex-wrap: wrap;
-    }
-    .section_service {
-        min-width: 50%;
-        margin-bottom: 20px;
-    }
-    .section_service:first-child {
-        border-left: 0;
-    }
-    .section_team {
-        max-width: 580px;
-    }
-    .section_map_info {
-        width: auto;
-    }
-    .section_map {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .section_map_area {
-        width: auto;
-    }
-    .section_map_info_item {
-        margin-bottom: 20px;
-    }
-    .section_map_info_item:last-child {
-        margin-bottom: 0;
-    }
-}
-
-@media (max-width:450px) {
-    .logo {
-    margin-left: 30px;
-    }
-
-    nav {
-    display: none;
-    position: absolute;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 80vw;
-    height: calc(100vh - 100px); 
-    top: 100px;
-    right: 0;
-}
-.menu ul {
-    flex-direction:column;
-}
-.menu li a {
-    font-weight:bold;
-    height: 60px;
-    font-size: 20px;
-    margin-left:30px;
-    border:0;
-}
-.menu li.active a {
-    border:0;
-    color: #a47c0c;
-
-}
-.menu li a:hover {
-    border:0;
-    color: #a47c0c;
-}
-.menu_opener {
-    display: block;
-    width: 45px;
-    margin-right: 30px;
-}
-
-.banner h2 {
-    font-size: 17px;
-}
-/*entao para o about us e so colocar um column*/
-.section_about_us {
-    flex-direction: column;
-}
-.section_about_us_left {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-.section_about_us_right {
-    margin-left: 30px;
-    margin-right: 30px;
-    width:auto;
-}
-.section_about_us_right img {
-    width: 100%;
-}
-
-.section_services {
-    flex-wrap: wrap;
-}
-.section_service {
-    min-width: 100%;
-    margin-bottom: 20px;
-}
-.section_service:first-child {
-    border-left: 0;
-}
 
 
-.section_projects_filters {
-    margin-left:30px;
-    margin-right: 30px;
-}
-.section_projects_photo {
-    width: 300px;
-}
-.section_projects_photoarea{
-    width: 300px;
-    height: 190px;
-}
-.section_team {
-    max-width: 280px;
-}
-.section_contact {
-    max-width: 350px;
+            /*vms colocar no nosso nav um position absolute para q o menu fique flutuante e nos possamos mover ele.*/
+            @media (min-width:601px) and (max-width:800px) {
+                .logo {
+                    margin-left: 15px;
+                }
+                nav {
+                    position: absolute;
+                    z-index: 99;
+                    background-color: white;
+                    width: 100%;
+                    height: calc(100vh - 600px); /*altura como um todo menos a altura do nosso menu*/
+                    top: 100px;
+                    right: 0;
+                    border-radius: 30px;
+                    box-shadow: 0px 0px 7px #ddd;
+                }
+                nav:hover {
+                    box-shadow: 0px 0px 10px #999;
+                    animation-duration: 1s;
+                    animation-iteration-count: 1;
+                    transition: all 1s linear;
+                }
+                /*dessa forma colocamos o menu um item abaixo do outro*/
+                .menu ul {
+                    flex-direction:column;
+                }
+                .menu li a {
+                    color: #333;
+                    font-size: 30px;
+                    height: 50px;
+                    font-size: 20px;
+                    margin-left:210px;
+                    border-bottom: 0.2px solid #ddd;
+                    width: 200px;
+                }
+                .menu li {
+                    border:0;
+                    color: #a47c0c;
+                }
+                .menu li a:hover {
+                    color: #a47c0c;
+                }                             
+                .menu_toggle {
+                    top: 0;
+                    right: 0;
+                    position: fixed;
+                    margin-right: 50px;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    cursor: pointer;
+                    background-color: #fff;
+                }
+                .bar {
+                    border-radius: 20px;
+                    width: 40px;
+                    height: 5px;
+                    background-color: #a47c0c;
+                    margin: 6px 0;
+                }
+                .section_about_us_left p {
+                    padding-right: 20px;
+                }
+                /*entao para o about us e so colocar um column*/    
+                .section_about_us_left .button {
+                    margin: 5%; 
+                }
+                }
+                .section_services {
+                    flex-wrap: wrap;
+                }
+                .section_service {
+                    min-width: 50%;
+                    margin-bottom: 20px;
+                }
+                .section_service:first-child {
+                    border-left: 0;
+                }
+                .section_team {
+                    max-width: 580px;
+                }
+                .section_map_area iframe{
+                    width: 100%;
+                    height: 300px;
+                }
+                .section_map_area {
+                    padding: 10px;
+                }
 
-}
-.section_companies_area{
-    flex-wrap: wrap;
-}
-.section_company {
-    min-width: 50%;
-    margin-bottom: 20px;
-}
+                            @media (max-width:600px) {
+                                nav {
+                                    position: absolute;
+                                    z-index: 99;
+                                    background-color: white;
+                                    width: 100%;
+                                    height: calc(100vh - 600px); /*altura como um todo menos a altura do nosso menu*/
+                                    top: 100px;
+                                    right: 0;
+                                    border-radius: 30px;
+                                    box-shadow: 0px 0px 7px #ddd;
+                                }
+                                nav:hover {
+                                    box-shadow: 0px 0px 10px #999;
+                                    animation-duration: 1s;
+                                    animation-iteration-count: 1;
+                                    transition: all 1s linear;
+                                }
+                                /*dessa forma colocamos o menu um item abaixo do outro*/
+                                .menu ul {
+                                    flex-direction:column;
+                                }
+                                .menu li a {
+                                    color: #333;
+                                    font-size: 30px;
+                                    height: 50px;
+                                    font-size: 20px;
+                                    margin-left:210px;
+                                    border-bottom: 0.2px solid #ddd;
+                                    width: 200px;
+                                }
+                                .menu li {
+                                    border:0;
+                                    color: #a47c0c;
+                                }
+                                .menu li a:hover {
+                                    color: #a47c0c;
+                                }                             
+                                .menu_toggle {
+                                    top: 0;
+                                    right: 0;
+                                    position: fixed;
+                                    margin-right: 50px;
+                                    margin-top: 30px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-end;
+                                    cursor: pointer;
+                                    background-color: #fff;
+                                }
+                                .bar {
+                                    border-radius: 20px;
+                                    width: 40px;
+                                    height: 5px;
+                                    background-color: #a47c0c;
+                                    margin: 6px 0;
+                                }
 
-.section_map_info {
-    width: auto;
-}
-.section_map {
- padding: 0;
- padding-bottom:250px;
-}
+                            .section_about_us_left p {
+                                font-size: 14px;
+                            }
+                            .section_about_us_left video {
+                                margin-bottom: 0;
+                            }
+                            .section_methods {
+                                flex-wrap: wrap;
+                            }
+                            .section_method {
+                                min-width: 100%;
+                                margin-bottom: 20px;
+                                border: none;
+                            }
 
-.section_map_area {
-    width: auto;
-}
-.section_map_info_item {
-    margin-bottom: 20px;
-}
-.section_map_info_item:last-child {
-    margin-bottom: 0;
-}
-.footer_area {
-    flex-direction: column;
-}
-.footer_item {
-    margin-bottom: 20px;
-}
-.footer_social {
-    justify-content: center;
-}
+
+
+                            .section_clients_filters {
+                                margin-left:30px;
+                                margin-right: 30px;
+                            }
+                            .section_clients_photo {
+                                width: 300px;
+                            }
+                            .section_clients_photoarea{
+                                width: 300px;
+                                height: 190px;
+                            }
+                            .section_team {
+                                max-width: 280px;
+                            }
+                            .section_contact {
+                                max-width: 350px;
+                            }
+                            .section_map {
+                                width: 100%;
+                            }
+                            .section_map_area iframe {
+                                width: 100%;
+                            }
+
 }

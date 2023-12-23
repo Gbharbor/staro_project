@@ -15,27 +15,40 @@
     <header>
         <div class="header"> 
             <div class="logo">
-                    <img src="./assets/img/Staro_media/logo_menu_staro.png"/>
+                    <img src="./assets/img/Staro_media/logo_menu_staro.png" alt="logo da Staro"/>
             </div>
-            <div class="menu">
-                <img class="menu_opener" src="assets/img/icones/menu.png"/>
-                <nav>
-                    <ul>
-                        <li class="active"><a href="">Inicio</a>
+                <div class="menu_toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="menu">
+                    <nav>
+                     <ul>
+                        <li class="active" >
+                            <a href="#home" onclick="hideMenu()">Inicio</a>
                         </li>
-                        <li><a href="#about_us">Sobre</a></li>
-                        <li><a href="#process">Processo</a></li>
-                        <li><a href="#clients">Clientes</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#testimonials">testimonials</a></li>
-                        <li><a href="#talktous">contacto</a></li>
+                        <li>
+                            <a href="#about_us" onclick="hideMenu()">Sobre</a></li>
+                        <li>
+                            <a href="#process"onclick="hideMenu()">Processo</a></li>
+                        <li>
+                            <a href="#clients"onclick="hideMenu()">Clientes</a></li>
+                        <li>
+                            <a href="#team"onclick="hideMenu()">Team</a></li>
+                        <li>
+                            <a href="#testimonials"onclick="hideMenu()">testimonials</a></li>
+                        <li>
+                            <a href="#talktous"onclick="hideMenu()">contacto</a>
+                        </li>
                     </ul>
-                </nav>
-            </div>
+                     </nav>
+                    </div>           
         </div>
     </header>
     <main>
         <!--banner-->
+        <span id="home"></span>
         <section class="banner">
             <div class="sliders" style="margin-left:0vw;">
                 <div class="slide">
@@ -74,11 +87,9 @@
                     <p>Com mais de 25 anos de existência a Staro - Clean Rating presta serviços completos de recolhas, tratamentos e entregas de Roupas. Unicamente direccionados a empreendimentos hoteleiros que procuram elevados níveis de exigência de qualidade no tratamento de Roupas de Quartos, Restaurantes e Spa's, proporcionando total confiança e tranquilidade. </p>
                     <br>
                     <a href="#talktous" class="button">Saiba mais</a>
-                  </div>
-                  <div class="section_about_us_right">
+                    <br>
                     <video id="" autoplay muted loop>
                         <source src="./assets/img/staro_media/staro_video.mp4" type="video/mp4">
-                        Seu navegador não suporta o elemento de vídeo.
                     </video>
                   </div>
                 </div>
@@ -94,7 +105,7 @@
             <div class="section_body">
                 <div class="section_methods">
                     <div class="section_method">
-                        <img src="/assets/img/staro_icons/PickUp.png"/>
+                        <img src="assets/img/staro_icons/PickUp.png"/>
                         <h4>SERVIÇO DE PICKUP</h4>
                         <p>Sempre preparados</p>
                     </div>
@@ -217,7 +228,7 @@
                                         <p>Conheca mais sobre</p>
                                     </a>
                                 </div>
-                                <img src="/assets/img/staro_clients/hotel_ouromystory.jpeg"/>                            
+                                <img src="./assets/img/staro_clients/hotel_ouromystory.jpeg"/>                            
                             </div>
                         </div>
                         <div class="section_client_photo">
@@ -475,18 +486,20 @@
                 </div>
             </div>
             <div class="footer_item area2">
-                        <div class="area_area2">Todos os direitos reservados &COPY;DevHarbor <a href="https://www.linkedin.com/in/drportox/" target="_blank" id="saiba_mais">Saiba Mais</a>
+                        <div class="area_area2">Todos os direitos reservados &COPY;DevHarbor 
+                            <a href="https://www.linkedin.com/in/drportox/" target="_blank" id="saiba_mais">Saiba Mais</a>
                         </div>
             </div>
             <div class="footer_item area3">
                 <form method="POST">
-                    <input type="email" name="email" placeholder="escreva seu email"/>
-                    <button class="button btn">
+                    <input style="text-transform: uppercase;" type="email" name="email" placeholder="seu email aqui"/>
+                    <button class="btn">
                             Inscreva-se
                     </button>
                 </form>
             </div>
         </div><!--section footer area-->
     </footer>
+    <script src="./assets/js/staro.js"></script>
 </body>
 </html>
