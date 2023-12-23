@@ -42,10 +42,6 @@ hr {
     display: flex;
     justify-content: flex-end;
 }
-.menu.active {
-    display: block;
-    opacity: 1;
-  }
 .menu ul {
     display: flex;
     margin-right: 20px;
@@ -54,7 +50,7 @@ hr {
 .menu li {
     list-style: none;
 }
-.menu li a {
+.menu li a  {
     color: #555;
     text-transform: uppercase;
     font-family: 'Poppins';
@@ -69,8 +65,7 @@ hr {
     animation-iteration-count: 1;
     transition: all 0.5s linear;
 }
-.menu li a:hover,
-.menu .active a {
+.menu li a.active:hover {
     color:#a47c0c;
 }
 .banner {
@@ -749,9 +744,9 @@ form .btn {
                     font-size: 30px;
                     height: 50px;
                     font-size: 20px;
-                    margin-left:210px;
+                    margin-left:0;
                     border-bottom: 0.2px solid #ddd;
-                    width: 200px;
+                    width: 100%;
                 }
                 .menu li {
                     border:0;
@@ -828,15 +823,17 @@ form .btn {
                                 /*dessa forma colocamos o menu um item abaixo do outro*/
                                 .menu ul {
                                     flex-direction:column;
+                                    display: flex;
+                                    margin-right: 20px;
                                 }
                                 .menu li a {
                                     color: #333;
                                     font-size: 30px;
                                     height: 50px;
                                     font-size: 20px;
-                                    margin-left:210px;
+                                    margin-left:0;
                                     border-bottom: 0.2px solid #ddd;
-                                    width: 200px;
+                                    width: 100%;
                                 }
                                 .menu li {
                                     border:0;
