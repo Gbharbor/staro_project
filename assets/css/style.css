@@ -290,6 +290,9 @@ input[type=submit] {
     font-size: 26px;
     font-family:'Playfair Display';
 }
+.section_client_photoinfo h5:visited {
+    color: #fff;
+}
 .section_client_photoinfo p {
     font-size: 13px;
     font-family:'poppins';
@@ -673,6 +676,9 @@ form .btn {
     .section_client_photoinfo a:visited{
         color: #fff;
     }
+    .section_client_photoinfo h5:visited {
+        color: #fff;
+    }
     /*MAPA*/
     .section_map_area iframe{
         width: 100%;
@@ -760,6 +766,9 @@ form .btn {
         text-decoration: none;
     }
     .section_client_photoinfo a:visited{
+        color: #fff;
+    }
+    .section_client_photoinfo h5:visited {
         color: #fff;
     }
     .section_clients_filters {
