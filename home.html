@@ -18,14 +18,14 @@
                     <a href="#home"><img src="./assets/img/Staro_media/logo_menu_staro.png" alt="logo da Staro"/>
                     </a>
             </div>
-                <div class="menu_toggle" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <div class="menu">
-                    <nav>
-                     <ul>
+            <div class="menu_toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
                         <li>
                             <a class="active" href="#home" onclick="hideMenu()">Inicio</a>
                         </li>
@@ -43,48 +43,29 @@
                             <a class="active" href="#talktous" onclick="hideMenu()">contacto</a>
                         </li>
                     </ul>
-                     </nav>
-                </div>           
+                </nav>
+            </div>           
         </div>
     </header>
     <main>
-        <!--banner-->
+        <!--BANNER-->
         <span id="home"></span>
         <section class="banner">
-            <div class="sliders" style="margin-left:0vw;">
-                <div class="slide">
-                    <div class="slidearea">
-                        <img class="imgbanner1" src="./assets/img/Staro_media/logoStaro2.png">
-                        <a href="#about_us" class="button">Sobre nos</a>
-                    </div>
-                </div><div class="slide">
-                    <div class="slidearea">
-                        <h1>Clientes</h1>
-                        <a href="#" class="button">Conheca</a>
-                    </div>
-                </div><div class="slide">
-                    <div class="slidearea">
-                        <h1>Metodo</h1>
-                        <a href="#" class="button">Todo Processo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="sliders_pointers">
-                <div class="pointer active"></div>
-                <div class="pointer"></div>
-                <div class="pointer"></div>
+            <div class="slide">  
+                <img class="imgbanner" src="./assets/img/Staro_media/logoStaro2.png">
+                <a href="#about_us" class="button">Sobre nos</a>
             </div>
         </section>
         <!--SOBRE NOS-->
         <span id="about_us"></span>
-        <br><br><br>
+        <br><br>
         <hr>
         <section class="default">
-            <div class="section_title dark">Sobre Nos</div>
+            <div class="section_title">Sobre Nos</div>
             <div class="section_desc">Conheca nossa historia</div>
               <div class="section_body">
                 <div class="section_about_us">
-                  <div class="section_about_us_left">
+                  <div class="section_about_us_area">
                     <p>Com mais de 25 anos de existência a Staro - Clean Rating presta serviços completos de recolhas, tratamentos e entregas de Roupas. Unicamente direccionados a empreendimentos hoteleiros que procuram elevados níveis de exigência de qualidade no tratamento de Roupas de Quartos, Restaurantes e Spa's, proporcionando total confiança e tranquilidade. </p>
                     <br>
                     <a href="#talktous" class="button">Saiba mais</a>
@@ -96,9 +77,9 @@
                 </div>
               </div>
         </section>
-        <!--PROCESSO-->
+        <!--METODO-->
         <span id="process"></span>
-        <br><br><br>
+        <br><br>
         <hr/>
         <section class="default">
             <div class="section_title">Processo</div>
@@ -130,7 +111,7 @@
         </section>
         <!--CLIENTES-->
         <span id="clients"></span>
-        <br><br><br>
+        <br><br>
         <section class="default grey">
             <div class="section_title">Clientes</div>
             <div class="section_desc">hoteis mais conceituado do Portugal</div>
@@ -281,156 +262,79 @@
               </div>
             </div>
         </section>
-        <!--Nosso time-->
+        <!--TIME-->
         <span id="team"></span>
-        <br><br><br>
+        <br><br>
         <section class="default bg_team">
             <div class="section_team_area">
-              <div class="section_title team">TEAM</div>
-                <div class="section_desc">staff</div>
-                  <div class="section_body">
+            <div class="section_title team">TEAM</div>
+            <div class="section_desc">staff</div>
+                <div class="section_body">
                     <div class="section_team">
-                      <div class="sliders" style="margin-left:0vw;">
-                        <!--n mexer slide display none-->
-                          <div class="slide hidde">
-                              <div class="slidearea">
-                                <img class="section_team_avatar" src="#"/>
-                                  <div class="section_team_name dulce">
-                                      hidde
-                                  </div>
-                                  <div class="section_team_role dulce">
-                                      hidde
-                                  </div>
-                                  <div class="section_team_social">
-                                    <a href=""><img src="#"/></a>
-                                    <a href=""><img src="#"/></a>
-                                    <a href=""><img src="#"/></a>
-                                  </div>
-                              </div>
-                          </div><div class="slide">
-                              <div class="slidearea">
-                                  <img class="section_team_avatar" src="./assets/img/staro_media/logoStaro2.png"/>
-                                  <div class="section_team_name">
-                                      Angelo Marques
-                                  </div>
-                                  <div class="section_team_role">
-                                      CPO
-                                  </div>
-                                  <div class="section_team_social">
-                                    <a href=""><img src="assets/img/icones/facebook.png"/></a>
-                                    <a href=""><img src="assets/img/icones/linkedin.png"/></a>
-                                    <a href=""><img src="assets/img/icones/twitter.png"/></a>
-                                  </div>
-                              </div>
-                          </div><div class="slide">
-                              <div class="slidearea">
-                                  <img class="section_team_avatar" src="./assets/img/staro_media/logoStaro2.png"/>
-                                  <div class="section_team_name">
-                                      Dulce Marques
-                                  </div>
-                                  <div class="section_team_role">
-                                      CEO
-                                  </div>
-                                  <div class="section_team_social">
-                                    <a href=""><img src="assets/img/icones/facebook.png"/></a>
-                                    <a href="https://www.linkedin.com/in/dulce-marques-b2384780/" target="_blank" ><img src="assets/img/icones/linkedin.png"/></a>
-                                    <a href=""><img src="assets/img/icones/twitter.png"/></a>
-                                  </div>
-                              </div>
-                          </div><div class="slide">
-                              <div class="slidearea">
-                                <img class="section_team_avatar" src="./assets/img/staro_media/logoStaro2.png"/>
-                                  <div class="section_team_name">
-                                      Didie Marques
-                                  </div>
-                                  <div class="section_team_role">
-                                      Operador 
-                                  </div>
-                                  <div class="section_team_social">
-                                    <a href=""><img src="assets/img/icones/facebook.png"/></a>
-                                    <a href=""><img src="assets/img/icones/linkedin.png"/></a>
-                                    <a href=""><img src="assets/img/icones/twitter.png"/></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
+                        <div class="slide">
+                            <img class="section_team_avatar" src="./assets/img/staro_media/logoStaro2.png"/>
+                            <div class="section_team_name">
+                                    Angelo Marques
+                            </div>
+                            <div class="section_team_role">
+                                    CPO
+                            </div>
+                            <div class="section_team_social">
+                                <a href=""><img src="assets/img/icones/facebook.png"/></a>
+                                <a href=""><img src="assets/img/icones/linkedin.png"/></a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img class="section_team_avatar" src="./assets/img/staro_media/logoStaro2.png"/>
+                            <div class="section_team_name">
+                                Dulce Marques
+                            </div>
+                            <div class="section_team_role">
+                                CEO
+                            </div>
+                            <div class="section_team_social">
+                                <a href="#"></a>
+                                <a href=""><img src="assets/img/icones/facebook.png"/></a>
+                                <a href="https://www.linkedin.com/in/dulce-marques-b2384780/" target="_blank" ><img src="assets/img/icones/linkedin.png"/></a>
+                            </div>
+                        </div>
+                    </div><!--section team-->
+                </div><!--section body-->
             </div>
         </section>
-        <!--Area dos clientes satifeitos-->
+        <!--TESTEMUNHO-->
         <span id="testimonials"></span>
         <br><br><br>
-        <section class="default light testimonials">
+        <section class="default">
             <div class="section_title">testimonials</div>
             <div class="section_desc">Review de nossos clientes</div>
-              <div class="section_body">
+            <div class="section_body">
                 <div class="section_testimonials">
-                  <div class="sliders" style="margin-left:0vw;">
-                    <div class="slide">
-                      <div class="slidearea">
-                        <div class="section_testimonials_avatar">
-                            <a href="https://www.corposantohotel.com/" target="_blank">
-                        <img src="./assets/img/staro_media/CorpoSantoTestimonials.png"/>
-                            </a>
-                        </div>
-                        <div class="section_testimonials_name">
-                            John Nunu Silva
-                        </div>
-                        <div class="section_testimonials_role">
-                            Director
-                        </div>
-                        <img class="section_testimonials_quoteimg" src="assets/img/icones/quote.png"/>
-                        <div class="section_testimonials_quote">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur corporis facilis autem consequatur laudantium ea voluptate sapiente ab.
-                        </div>
-                      </div> <!--slidearea-->
-                    </div> <!--slide--><div class="slide">
-                        <div class="slidearea">
-                          <div class="section_testimonials_avatar">
-                              <a href="https://www.corposantohotel.com/" target="_blank">
-                          <img src="./assets/img/staro_media/CorpoSantoTestimonials.png"/>
-                              </a>
-                          </div>
-                          <div class="section_testimonials_name">
-                              John Nunu Silva
-                          </div>
-                          <div class="section_testimonials_role">
-                              Director
-                          </div>
-                          <img class="section_testimonials_quoteimg" src="assets/img/icones/quote.png"/>
-                          <div class="section_testimonials_quote">
-                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur corporis facilis autem consequatur laudantium ea voluptate sapiente ab.
-                          </div>
-                        </div> <!--slidearea-->
-                      </div> <!--slide--><div class="slide">
-                        <div class="slidearea">
-                          <div class="section_testimonials_avatar">
-                              <a href="https://www.corposantohotel.com/" target="_blank">
-                          <img src="./assets/img/staro_media/CorpoSantoTestimonials.png"/>
-                              </a>
-                          </div>
-                          <div class="section_testimonials_name">
-                              John Nunu Silva
-                          </div>
-                          <div class="section_testimonials_role">
-                              Director
-                          </div>
-                          <img class="section_testimonials_quoteimg" src="assets/img/icones/quote.png"/>
-                          <div class="section_testimonials_quote">
-                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur corporis facilis autem consequatur laudantium ea voluptate sapiente ab.
-                          </div>
-                        </div> <!--slidearea-->
-                      </div> <!--slide-->
-                  <div class="sliders_pointers">
-                    <div class="pointer active"></div>
-                    <div class="pointer"></div>
-                    <div class="pointer"></div>
-                  </div>
-                </div><!--section testimonials-->
-              </div> <!--section body-->
+                    <div class="sliders" style="margin-left:0vw;">
+                        <div class="slide">
+                            <div class="slidearea">
+                                <div class="section_testimonials_avatar">
+                                    <a href="https://www.corposantohotel.com/" target="_blank">
+                                <img src="./assets/img/staro_media/CorpoSantoTestimonials.png"/>
+                                    </a>
+                                </div>
+                                <div class="section_testimonials_name">
+                                    John Nunu Silva
+                                </div>
+                                <div class="section_testimonials_role">
+                                    Director
+                                </div>
+                                <img class="section_testimonials_quoteimg" src="assets/img/icones/quote.png"/>
+                                <div class="section_testimonials_quote">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur corporis facilis autem consequatur laudantium ea voluptate sapiente ab.
+                                </div>
+                            </div><!--slidearea-->
+                        </div><!--slide-->
+                    </div> <!--sliders-->
+                </div> <!--testimonails-->
+            </div><!--section body-->
         </section>
-        <!--Banner Clientes-->
+        <!--COMPANIAS-->
         <section class="default section_companies">
             <div class="section_body">
                 <div class="section_companies_area">
@@ -438,7 +342,7 @@
                 </div>
             </div>
         </section>        
-        <!--fale conosco-->
+        <!--FALE CONOSCO-->
         <span id="talktous"></span>
         <br><br><br>
         <section class="default light">
@@ -453,12 +357,12 @@
                         </div>
                         <input type="text" name="name" placeholder="Assunto"/>
                         <textarea name="message"></textarea>
-                        <input type="submit" value="Enviar" class="button"/>
+                        <input type="submit" value="Enviar" class="button" onclick="submitForm()"/>
                     </form>
                 </div>
             </div>
         </section>
-        <!--AREA DO MAPA-->
+        <!--MAPA-->
         <section class="section_map">
             <div class="section_map_area">
                     <iframe class="map_staro" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.992717750399!2d-9.134099890199181!3d39.42428912846218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd18b2e71d20afa7%3A0xaf39968285028213!2sSTARO%20-%20Clean%20Rating!5e0!3m2!1sen!2spt!4v1703104382942!5m2!1sen!2spt" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
