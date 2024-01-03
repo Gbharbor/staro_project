@@ -7,9 +7,6 @@
 a:link {
     text-decoration: none;
 }
-a:visited {
-    color: white;    
-}
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Playfair Display', serif;
@@ -256,7 +253,6 @@ input[type=submit] {
     height: inherit;
     box-shadow: 5px 5px 8px #555;
     border-radius: 15px;
-    animation-name: section_client_photoinfo;
     animation-duration: 1s;
     animation-iteration-count: 1;
     transition: all 0.5s linear;
@@ -670,6 +666,13 @@ form .btn {
     .section_about_us_left .button {
         margin: 5%; 
     }
+    /*CLIENTES*/
+    .section_client_photoinfo a {
+        text-decoration: none;
+    }
+    .section_client_photoinfo a:visited{
+        color: #fff;
+    }
     /*MAPA*/
     .section_map_area iframe{
         width: 100%;
@@ -753,8 +756,11 @@ form .btn {
         border: none;
     }
     /*CLIENTES*/
-    .section_client_photoinfo a:link {
+    .section_client_photoinfo a {
         text-decoration: none;
+    }
+    .section_client_photoinfo a:visited{
+        color: #fff;
     }
     .section_clients_filters {
         margin-left: 30px;
