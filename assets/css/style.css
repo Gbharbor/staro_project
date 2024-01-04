@@ -282,6 +282,9 @@ input[type=submit] {
 .section_client_photoinfo a{
     text-decoration: none;
 }
+.section_client_photoinfo a {
+    text-decoration: none;
+}
 .section_client_photoinfo a:visited{
     color: #fff;
 }
@@ -289,9 +292,6 @@ input[type=submit] {
     text-transform: uppercase;
     font-size: 26px;
     font-family:'Playfair Display';
-}
-.section_client_photoinfo h5:visited {
-    color: #fff;
 }
 .section_client_photoinfo p {
     font-size: 13px;
@@ -766,9 +766,6 @@ form .btn {
         text-decoration: none;
     }
     .section_client_photoinfo a:visited{
-        color: #fff;
-    }
-    .section_client_photoinfo h5:visited {
         color: #fff;
     }
     .section_clients_filters {
