@@ -8,9 +8,9 @@ Somos uma empresa especializada em serviços de lavanderia, com foco exclusivo n
 
 - [Conheça o Protótipo](https://friendly-dusk-43e25e.netlify.app/)
   -Desktop
-  ![HOME e MENU](./home.png)
+  ![HOME e MENU](./assets/img_readme/home.png)
   -Mobile
-  ![HOME](./home.jpeg) ![MENU](./menu.jpeg)
+  ![HOME](./assets/img_readme/home.jpeg){ width=300px } ![MENU](./assets/img_readme/menu.jpeg){ width=300px }
 
 ### Tecnologias Utilizadas
 
