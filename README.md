@@ -7,13 +7,15 @@ Somos uma empresa especializada em serviços de lavanderia, com foco exclusivo n
 ### Conheça o Projeto
 
 - [Conheça o Protótipo](https://friendly-dusk-43e25e.netlify.app/)
-  
-  ![home e menu](./home.png)
+  -Desktop
+  ![HOME e MENU](./home.png)
+  -Mobile
+  ![HOME](./home.jpeg) ![MENU](./menu.jpeg)
 
 ### Tecnologias Utilizadas
 
 - **HTML5/CSS3/JavaScript**:
-  - Flexbox, Media Queries, Transitions, Animations e Gradient.
+  - Flexbox, Media Queries, Transitions, Animations and Gradient.
 
 ### Licença
 
